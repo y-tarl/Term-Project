@@ -1,0 +1,13 @@
+# ninja log v5
+900	1387	7255647869794582	BSMS.exe	3be1db8a07763aab
+3	449	7195566729444943	CMakeFiles/BSMS.dir/basis.cpp.obj	f180e61399a15633
+109	522	7195566730382982	CMakeFiles/BSMS.dir/other.cpp.obj	b0f8eb6388f5e82
+39	331	7195566728459135	CMakeFiles/BSMS.dir/manager.cpp.obj	d0ef235fbdf01e89
+3	889	7255647865100729	CMakeFiles/BSMS.dir/main.cpp.obj	ee9143f9c91a7282
+19	385	7195566728998809	CMakeFiles/BSMS.dir/bread.cpp.obj	b87282a2cbe0586a
+64	718	7255647863377213	CMakeFiles/BSMS.dir/managervector.cpp.obj	9cb66ca4e594e66d
+53	805	7255647864230468	CMakeFiles/BSMS.dir/breadvector.cpp.obj	52e4fcf33616bfa8
+75	804	7255647864210361	CMakeFiles/BSMS.dir/menu.cpp.obj	ce2fbb7478d4b79b
+123	631	7195566731493139	CMakeFiles/BSMS.dir/sale.cpp.obj	9626c56a94072812
+90	900	7255647865211353	CMakeFiles/BSMS.dir/salevector.cpp.obj	e01c971d333314c9
+0	182	7256456434704940	build.ninja	84372e1f471aed49

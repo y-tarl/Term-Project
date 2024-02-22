@@ -1,0 +1,3 @@
+D:/CodeField/CODE_Cpp/Term project/BSMS/cmake-build-debug/CMakeFiles/BSMS.dir
+D:/CodeField/CODE_Cpp/Term project/BSMS/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CodeField/CODE_Cpp/Term project/BSMS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
