@@ -1,0 +1,163 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\soft\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2
+GPIO_LED.ngc GPIO_LED.ngd
+
+Reading NGO file "C:/kk/kkk/demo_mouse_rand/GPIO_LED.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "button_led_buzzer_ucf.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "col[0]" LOC = P14;>
+   [button_led_buzzer_ucf.ucf(23)]: NET "col[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "col[0]" LOC = P14;> [button_led_buzzer_ucf.ucf(23)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[1]" LOC = P15;>
+   [button_led_buzzer_ucf.ucf(24)]: NET "col[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "col[1]" LOC = P15;> [button_led_buzzer_ucf.ucf(24)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[2]" LOC = P16;>
+   [button_led_buzzer_ucf.ucf(25)]: NET "col[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "col[2]" LOC = P16;> [button_led_buzzer_ucf.ucf(25)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[3]" LOC = P17;>
+   [button_led_buzzer_ucf.ucf(26)]: NET "col[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "col[3]" LOC = P17;> [button_led_buzzer_ucf.ucf(26)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[0]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(27)]: NET "col[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[1]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(28)]: NET "col[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[2]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(29)]: NET "col[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "col[3]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(30)]: NET "col[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[0]" LOC = P9;>
+   [button_led_buzzer_ucf.ucf(32)]: NET "row[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "row[0]" LOC = P9;> [button_led_buzzer_ucf.ucf(32)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[1]" LOC = P10;>
+   [button_led_buzzer_ucf.ucf(33)]: NET "row[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "row[1]" LOC = P10;> [button_led_buzzer_ucf.ucf(33)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[2]" LOC = P11;>
+   [button_led_buzzer_ucf.ucf(34)]: NET "row[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "row[2]" LOC = P11;> [button_led_buzzer_ucf.ucf(34)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[3]" LOC = P12;>
+   [button_led_buzzer_ucf.ucf(35)]: NET "row[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "row[3]" LOC = P12;> [button_led_buzzer_ucf.ucf(35)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[0]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(36)]: NET "row[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[1]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(37)]: NET "row[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[2]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(38)]: NET "row[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "row[3]" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(39)]: NET "row[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "buzzer" LOC = P27;>
+   [button_led_buzzer_ucf.ucf(41)]: NET "buzzer" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "buzzer" LOC = P27;> [button_led_buzzer_ucf.ucf(41)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "buzzer" IOSTANDARD = LVCMOS33;>
+   [button_led_buzzer_ucf.ucf(42)]: NET "buzzer" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    18
+  Number of warnings:   9
+
+Total memory usage is 4399744 kilobytes
+
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "GPIO_LED.bld"...

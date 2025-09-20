@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/kk/kkk/demo_mouse_rand/GPIO_LED.xst" -ofn "C:/kk/kkk/demo_mouse_rand/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED.ngc GPIO_LED.ngd  
+xst -intstyle ise -ifn "C:/kk/kkk/demo_mouse_rand/GPIO_LED.xst" -ofn "C:/kk/kkk/demo_mouse_rand/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED.ngc GPIO_LED.ngd  

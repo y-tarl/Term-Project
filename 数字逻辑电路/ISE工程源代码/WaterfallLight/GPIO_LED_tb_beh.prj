@@ -1,0 +1,3 @@
+verilog work "GPIO_LED.v"
+verilog work "GPIO_LED_tb.v"
+verilog work "C:/soft/14.7/ISE_DS/ISE//verilog/src/glbl.v"

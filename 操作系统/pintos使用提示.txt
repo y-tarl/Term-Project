@@ -1,0 +1,95 @@
+假设已经装好了ubuntu 18.04,并且安装了必要的软件。
+
+vagrant@by [20:01:07] threads $ which pintos
+/home/vagrant/.bin/pintos
+which命令用来检查一下pintos的路径有没有被加入到PATH变量中,用puppet命令provision过的话,缺省安装在~/.bin目录下.
+你本机上没有的话,可以用scp命令或者filezilla等工具从服务器上拉一份.
+
+接下来直接运行一下pintos,会看到命令支持的参数:
+vagrant@by [20:03:47] threads $ pintos
+pintos, a utility for running Pintos in a simulator
+Usage: pintos [OPTION...] -- [ARGUMENT...]
+where each OPTION is one of the following options       这里的OPTION是下表所列的选项
+  and each ARGUMENT is passed to Pintos kernel verbatim.这里的ARGUMENT是传递给Pintos内核的参数
+Simulator selection:
+  --bochs                  (default) Use Bochs as simulator  
+  --qemu                   Use QEMU as simulator  使用QEMU模拟器
+  --player                 Use VMware Player as simulator 使用VMware Player模拟器
+Debugger selection:
+  --no-debug               (default) No debugger
+  --monitor                Debug with simulator's monitor
+  --gdb                    Debug with gdb   使用gdb进行调试
+Display options: (default is both VGA and serial)
+  -v, --no-vga             No VGA display or keyboard  没有VGA显示器
+  -s, --no-serial          No serial input or output  没有串口输入输出
+  -t, --terminal           Display VGA in terminal (Bochs only) 
+Timing options: (Bochs only)
+  -j SEED                  Randomize timer interrupts  随机化时钟中断
+  -r, --realtime           Use realistic, not reproducible, timings
+Testing options:
+  -T, --timeout=N          Kill Pintos after N seconds CPU time or N*load_avg
+                           seconds wall-clock time (whichever comes first) 经过CPU时间N秒或N*load_avg实际时间后杀死pintos进程
+  -k, --kill-on-failure    Kill Pintos a few seconds after a kernel or user
+                           panic, test failure, or triple fault  当发生内核或者用户panic,测试失败或者三重故障几秒后杀死pintos进程
+Configuration options:
+  -m, --mem=N              Give Pintos N MB physical RAM (default: 4)
+File system commands:
+  -p, --put-file=HOSTFN    Copy HOSTFN into VM, by default under same name
+  -g, --get-file=GUESTFN   Copy GUESTFN out of VM, by default under same name
+  -a, --as=FILENAME        Specifies guest (for -p) or host (for -g) file name
+Partition options: (where PARTITION is one of: kernel filesys scratch swap)
+  --PARTITION=FILE         Use a copy of FILE for the given PARTITION
+  --PARTITION-size=SIZE    Create an empty PARTITION of the given SIZE in MB
+  --PARTITION-from=DISK    Use of a copy of the given PARTITION in DISK
+  (There is no --kernel-size, --scratch, or --scratch-from option.)
+Disk configuration options:
+  --make-disk=DISK         Name the new DISK and don't delete it after the run
+  --disk=DISK              Also use existing DISK (may be used multiple times)
+Advanced disk configuration options:
+  --loader=FILE            Use FILE as bootstrap loader (default: loader.bin)
+  --geometry=H,S           Use H head, S sector geometry (default: 16,63)
+  --geometry=zip           Use 64 head, 32 sector geometry for USB-ZIP boot
+                           (see http://syslinux.zytor.com/usbkey.php)
+  --align=bochs            Pad out disk to cylinder to support Bochs (default)
+  --align=full             Align partition boundaries to cylinder boundary to
+                           let fdisk guess correct geometry and quiet warnings
+  --align=none             Don't align partitions at all, to save space
+Other options:
+  -h, --help               Display this help message.
+
+以alarm-multiple这个测试用例为例,实际执行命令为:
+pintos -k -T 60 --qemu  -- -q  run alarm-multiple < /dev/null 2> tests/threads/alarm-multiple.errors > tests/threads/alarm-multiple.output
+如命令帮助里的第一句话所述,这里pintos命令后的-k -T 60 --qemu 是pintos的选项参数(options), 两个短横(--)之后的,为传递给pintos内核的参数. -q 是bochs的一个参数，表示quick start (skip configuration interface)，在qemu里没有
+我们用qemu -h 了解一下qemu命令格式,输出很长,我只贴了最前面几行
+
+vagrant@by [20:18:48] threads $ qemu -h
+QEMU emulator version 2.11.1(Debian 1:2.11+dfsg-1ubuntu7.26)
+Copyright (c) 2003-2017 Fabrice Bellard and the QEMU Project developers
+usage: qemu [options] [disk_image]
+
+'disk_image' is a raw hard disk image for IDE hard disk 0
+也就是说,除了丰富的选项options之外,qemu还可以带一个磁盘镜像的参数,模拟系统从硬盘引导的情形.
+下面列出的就是各种选项了,从大类上说分为:
+Standard options: 标准选项
+Block device options: 块设备选项
+USB options: USB选项
+Display options: 显示器选项
+Network options: 网络选项
+Character device options: 字符设备选项
+Device URL Syntax：设备地址语法
+TPM device options: 可信平台模块设备选项
+Linux/Multiboot boot specific: 
+Debug/Expert options:
+Generic object creation:
+
+如果有需要，可以通过这些options，改变qemu虚拟机的配置。
+2> 表示stderr(标准错误设备，在linux里的文件编号为2)写到.errors文件， 后面一个参数，表示将标准输出(stdout)输出到 .output文件
+
+
+其他几点实用提示：
+1）make VERBOSE=1 check 可以让它输出更详细的信息
+2）提交代码里去掉无用的printf,推荐在关键执行路径用assert
+3）大家学一下git diff命令.判题程序用git diff 查重的，目前只能处理文本
+
+
+

@@ -1,0 +1,42 @@
+//======LED=======//
+NET "led[0]" LOC = P143;
+NET "led[1]" LOC = P144;
+NET "led[2]" LOC = P1;
+NET "led[3]" LOC = P5;
+NET "led[4]" LOC = P6;
+NET "led[5]" LOC = P7;
+NET "led[6]" LOC = P8;
+NET "led[7]" LOC = P2;
+
+NET "led[0]" IOSTANDARD = LVCMOS33;
+NET "led[1]" IOSTANDARD = LVCMOS33;
+NET "led[2]" IOSTANDARD = LVCMOS33;
+NET "led[3]" IOSTANDARD = LVCMOS33;
+NET "led[4]" IOSTANDARD = LVCMOS33;
+NET "led[5]" IOSTANDARD = LVCMOS33;
+NET "led[6]" IOSTANDARD = LVCMOS33;
+NET "led[7]" IOSTANDARD = LVCMOS33;
+//======clk=======//
+NET "clk" LOC = P56;
+NET "clk" IOSTANDARD = LVCMOS33;
+//======button=======//
+NET "col[0]" LOC = P14;
+NET "col[1]" LOC = P15;
+NET "col[2]" LOC = P16;
+NET "col[3]" LOC = P17;
+NET "col[0]" IOSTANDARD = LVCMOS33;
+NET "col[1]" IOSTANDARD = LVCMOS33;
+NET "col[2]" IOSTANDARD = LVCMOS33;
+NET "col[3]" IOSTANDARD = LVCMOS33;
+
+NET "row[0]" LOC = P9;
+NET "row[1]" LOC = P10;
+NET "row[2]" LOC = P11;
+NET "row[3]" LOC = P12;
+NET "row[0]" IOSTANDARD = LVCMOS33;
+NET "row[1]" IOSTANDARD = LVCMOS33;
+NET "row[2]" IOSTANDARD = LVCMOS33;
+NET "row[3]" IOSTANDARD = LVCMOS33;
+//======buzzer=======//
+NET "buzzer" LOC = P27;
+NET "buzzer" IOSTANDARD = LVCMOS33;

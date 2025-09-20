@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep  6 16:58:37 2021
+# Process ID: 37868
+# Current directory: F:/Aiyaninfo/exp2_button
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30292 F:\Aiyaninfo\exp2_button\button_tb_isim_beh.wdb
+# Log file: F:/Aiyaninfo/exp2_button/vivado.log
+# Journal file: F:/Aiyaninfo/exp2_button\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {F:\Aiyaninfo\exp2_button\button_tb_isim_beh.wdb}

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Lenovo\Desktop\WaterfallLight\GPIO_LED.ncd
+OUTFILE=C:\Users\Lenovo\Desktop\WaterfallLight\GPIO_LED.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\Lenovo\Desktop\WaterfallLight
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

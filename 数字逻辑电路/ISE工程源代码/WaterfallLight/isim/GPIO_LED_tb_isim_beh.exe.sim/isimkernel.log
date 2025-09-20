@@ -1,0 +1,28 @@
+Command line:
+   GPIO_LED_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55129
+
+Tue Jun 18 14:37:35 2024
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5155.77 Meg
+
+ Total Signals          : 16
+ Total Nets             : 22
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 143
+
+ Total Simulation Time: 718.375 sec
+
+ Current Memory Usage: 4683.91 Meg
+
+Tue Jun 18 14:49:47 2024
+

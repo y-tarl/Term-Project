@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep  6 16:58:37 2021
+# Process ID: 37868
+# Current directory: F:/Aiyaninfo/exp2_button
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30292 F:\Aiyaninfo\exp2_button\button_tb_isim_beh.wdb
+# Log file: F:/Aiyaninfo/exp2_button/vivado.log
+# Journal file: F:/Aiyaninfo/exp2_button\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {F:\Aiyaninfo\exp2_button\button_tb_isim_beh.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'current_fileset' was cancelled
+INFO: [Common 17-344] 'open_wave_database' was cancelled
+1
+INFO: [Common 17-344] 'rdi::open_ppr_or_dcp' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  6 16:58:53 2021...

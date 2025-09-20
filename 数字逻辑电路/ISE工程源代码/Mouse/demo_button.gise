@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="demo_button.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="button_led_buzzer.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="button_led_buzzer.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="button_led_buzzer.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="button_led_buzzer.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="button_led_buzzer.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="button_led_buzzer.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="button_led_buzzer.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="button_led_buzzer.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="button_led_buzzer.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="button_led_buzzer.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="button_led_buzzer.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="button_led_buzzer.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="button_led_buzzer.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="button_led_buzzer.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="button_led_buzzer.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="button_led_buzzer.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="button_led_buzzer.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="button_led_buzzer.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="button_led_buzzer.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="button_led_buzzer.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="button_led_buzzer.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="button_led_buzzer.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="button_led_buzzer.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="button_led_buzzer_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="button_led_buzzer_cs.ngc"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="button_led_buzzer_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="button_led_buzzer_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="button_led_buzzer_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="button_led_buzzer_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="button_led_buzzer_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="button_led_buzzer_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="button_led_buzzer_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="button_led_buzzer_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="button_led_buzzer_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="button_led_buzzer_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="button_led_buzzer_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="button_led_buzzer_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="button_led_buzzer_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="button_led_buzzer_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="button_led_buzzer_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="button_led_buzzer_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="button_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="button_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="button_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1625469997" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1625469997">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695000" xil_pn:in_ck="-7957447352642329270" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1718695000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="button_led_buzzer.v"/>
+      <outfile xil_pn:name="button_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695000" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3313122085331421240" xil_pn:start_ts="1718695000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695000" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7684310962204204934" xil_pn:start_ts="1718695000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1625469997" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5770139074189031147" xil_pn:start_ts="1625469997">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695000" xil_pn:in_ck="-7957447352642329270" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1718695000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="button_led_buzzer.v"/>
+      <outfile xil_pn:name="button_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695001" xil_pn:in_ck="-7957447352642329270" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1283034339987159375" xil_pn:start_ts="1718695000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="button_tb_beh.prj"/>
+      <outfile xil_pn:name="button_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695002" xil_pn:in_ck="-6057095764338700672" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7054353217744967634" xil_pn:start_ts="1718695001">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="button_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2763415302907072326" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5770139074189031147" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5543829579095069576" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358040" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3480662772474712095" xil_pn:start_ts="1615358040">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718695128" xil_pn:in_ck="3004197790133474069" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8241615622204148220" xil_pn:start_ts="1718695123">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="button_led_buzzer.lso"/>
+      <outfile xil_pn:name="button_led_buzzer.ngc"/>
+      <outfile xil_pn:name="button_led_buzzer.ngr"/>
+      <outfile xil_pn:name="button_led_buzzer.prj"/>
+      <outfile xil_pn:name="button_led_buzzer.stx"/>
+      <outfile xil_pn:name="button_led_buzzer.syr"/>
+      <outfile xil_pn:name="button_led_buzzer.xst"/>
+      <outfile xil_pn:name="button_led_buzzer_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1615358047" xil_pn:in_ck="-8522816418855271654" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2446419595708143667" xil_pn:start_ts="1615358047">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1685262740" xil_pn:in_ck="-5445851386582741263" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="534360518432775638" xil_pn:start_ts="1685262735">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="button_led_buzzer.bld"/>
+      <outfile xil_pn:name="button_led_buzzer.ngd"/>
+      <outfile xil_pn:name="button_led_buzzer_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1685262745" xil_pn:in_ck="-3957372723527843310" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1685262740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="button_led_buzzer.pcf"/>
+      <outfile xil_pn:name="button_led_buzzer_map.map"/>
+      <outfile xil_pn:name="button_led_buzzer_map.mrp"/>
+      <outfile xil_pn:name="button_led_buzzer_map.ncd"/>
+      <outfile xil_pn:name="button_led_buzzer_map.ngm"/>
+      <outfile xil_pn:name="button_led_buzzer_map.xrpt"/>
+      <outfile xil_pn:name="button_led_buzzer_summary.xml"/>
+      <outfile xil_pn:name="button_led_buzzer_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1685262753" xil_pn:in_ck="5755336745072945995" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1685262745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="button_led_buzzer.ncd"/>
+      <outfile xil_pn:name="button_led_buzzer.pad"/>
+      <outfile xil_pn:name="button_led_buzzer.par"/>
+      <outfile xil_pn:name="button_led_buzzer.ptwx"/>
+      <outfile xil_pn:name="button_led_buzzer.unroutes"/>
+      <outfile xil_pn:name="button_led_buzzer.xpi"/>
+      <outfile xil_pn:name="button_led_buzzer_pad.csv"/>
+      <outfile xil_pn:name="button_led_buzzer_pad.txt"/>
+      <outfile xil_pn:name="button_led_buzzer_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1685262760" xil_pn:in_ck="6497692408762619764" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1685262753">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="button_led_buzzer.bgn"/>
+      <outfile xil_pn:name="button_led_buzzer.bit"/>
+      <outfile xil_pn:name="button_led_buzzer.drc"/>
+      <outfile xil_pn:name="button_led_buzzer.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1685171871" xil_pn:in_ck="6497692408762606910" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1685171870">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1718334621" xil_pn:in_ck="6497692408762606910" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="534360518432775638" xil_pn:start_ts="1718334621">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1685262753" xil_pn:in_ck="2477628564030694670" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1685262750">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="button_led_buzzer.twr"/>
+      <outfile xil_pn:name="button_led_buzzer.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

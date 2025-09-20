@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 
+xst -intstyle ise -ifn "E:/shudian/demo_GPIO/GPIO_LED.xst" -ofn "E:/shudian/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 
+xst -intstyle ise -ifn "C:/Users/Lenovo/Desktop/demo_GPIO/GPIO_LED.xst" -ofn "C:/Users/Lenovo/Desktop/demo_GPIO/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+xst -intstyle ise -ifn "C:/Users/Lenovo/Desktop/WaterfallLight/GPIO_LED.xst" -ofn "C:/Users/Lenovo/Desktop/WaterfallLight/GPIO_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GPIO_LED_ucf.ucf -p xc6slx9-tqg144-2 GPIO_LED_cs.ngc GPIO_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GPIO_LED_map.ncd GPIO_LED.ngd GPIO_LED.pcf 
+par -w -intstyle ise -ol high -mt off GPIO_LED_map.ncd GPIO_LED.ncd GPIO_LED.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml GPIO_LED.twx GPIO_LED.ncd -o GPIO_LED.twr GPIO_LED.pcf -ucf GPIO_LED_ucf.ucf 
+bitgen -intstyle ise -f GPIO_LED.ut GPIO_LED.ncd 

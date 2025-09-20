@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Lenovo/Desktop/demo_GPIO/GPIO_LED_tb_isim_beh.exe" -prj "C:/Users/Lenovo/Desktop/demo_GPIO/GPIO_LED_tb_beh.prj" "work.GPIO_LED_tb" "work.glbl" 

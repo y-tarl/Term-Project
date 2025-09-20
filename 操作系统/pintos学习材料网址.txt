@@ -1,0 +1,12 @@
+CS自学指南
+https://csdiy.wiki/
+https://csdiy.wiki/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/CS162/
+https://cs162.org/static/proj/pintos-docs/
+CS162 操作系统
+https://blog.csdn.net/altair_alpha/category_12006373.html
+
+【UCB操作系统CS162项目】Pintos Lab0：项目上手
+https://blog.csdn.net/Altair_alpha/article/details/126329170
+
+PintosBook
+https://alfredthiel.gitbook.io/pintosbook/

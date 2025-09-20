@@ -1,0 +1,222 @@
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/demo_button/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/demo_button/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "F:/Aiyaninfo/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "D:/Demo/exp2_button_keyfilter(1)/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "D:/Demo/exp2_button_keyfilter(1)/exp2_button_keyfilter/button_led_buzzer.syr" 
+xst -intstyle ise -ifn "D:/Demo/exp2_button_keyfilter(1)/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "D:/Demo/exp2_button_keyfilter(1)/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "D:/Demo/exp2_button_keyfilter(1)/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "D:/Demo/exp2_button_keyfilter(1)/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter/button_led_buzzer.xst" -ofn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "D:/exp2_button_keyfilter_old/button_led_buzzer.xst" -ofn "D:/exp2_button_keyfilter_old/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "D:/exp2_button_keyfilter_new_new/button_led_buzzer.xst" -ofn "D:/exp2_button_keyfilter_new_new/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "D:/exp2_button_keyfilter_new_new/button_led_buzzer.xst" -ofn "D:/exp2_button_keyfilter_new_new/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter_new_new/button_led_buzzer.xst" -ofn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter_new_new/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter_new_new/button_led_buzzer.xst" -ofn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter_new_new/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 
+xst -intstyle ise -ifn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter_new_new/button_led_buzzer.xst" -ofn "C:/Users/Lenovo/Desktop/exp2_button_keyfilter_new_new/button_led_buzzer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc button_led_buzzer_ucf.ucf -p xc6slx9-tqg144-2 button_led_buzzer_cs.ngc button_led_buzzer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd button_led_buzzer.pcf 
+par -w -intstyle ise -ol high -mt off button_led_buzzer_map.ncd button_led_buzzer.ncd button_led_buzzer.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml button_led_buzzer.twx button_led_buzzer.ncd -o button_led_buzzer.twr button_led_buzzer.pcf -ucf button_led_buzzer_ucf.ucf 
+bitgen -intstyle ise -f button_led_buzzer.ut button_led_buzzer.ncd 

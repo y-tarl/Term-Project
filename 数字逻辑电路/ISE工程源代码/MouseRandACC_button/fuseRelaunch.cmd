@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Lenovo/Desktop/randmouse/button_led_buzzer_isim_beh.exe" -prj "C:/Users/Lenovo/Desktop/randmouse/button_led_buzzer_beh.prj" "work.button_led_buzzer" "work.glbl" 

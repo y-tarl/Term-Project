@@ -1,0 +1,51 @@
+关于实验环境的安装
+参考 https://github.com/Berkeley-CS162/vagrant
+
+为了便于观察和调试pintos, 实验中pintos操作系统是运行了qemu模拟器之上的.qemu是一个功能强大的模拟器,通过动态二进制转换模拟各种cpu. 调用qemu命令是通过名为pintos的perl脚本实现的.当我们运行make check时,可以看到屏幕上输出的pintos和perl的命令行.
+
+github上介绍了两种搭建实验环境的方法:
+I. Running on Vagrant
+1. Download the source code (don't forget --recursive if you're using git clone) and run vagrant up inside the root of the  project directory.
+2. The Vagrantfile specifies ubuntu/bionic64 as the base box for this VM, so Vagrant will download that box from the Internet, which may take some time.
+3. Once the download is complete, Vagrant will import the VM appliance and run our Puppet provisioner.
+第一步,用git clone 下载源代码,因为用到了子项目,所以不要忘了使用 --recursive
+git clone --recursive https://github.com/Berkeley-CS162/vagrant.git
+第二步,进入下载后的目录,执行vagrant up命令
+第三步,vagrant up命令会根据Vagrantfile这个配置文件,配置虚拟机(在Vagrant里叫做box).做实验用的box的基(base)是ubuntu/bionic64,也就是ubuntu 18.04, 如果之前没有下载过这个box,就会自动下载. vagrant本身其实并不是虚拟机,虚拟机是通过virtualbox等它称为provider的程序提供的. 基础盒子下载好后,还需要对这个基础盒子进行一些操作,这个操作是用Puppet脚本实现的.
+vagrant up之后,就可以用vagrant ssh进入到实验环境了.
+由于国内的网络环境,下载vagrant box时可能会有问题. 另外我在尝试vagrant package打包盒子时,出现了一些问题,如果有尝试过的同学,可以在群里交流一下问题.
+
+II.Running on your own infrastructure
+既然实验用虚拟机是在ubuntu/bionic64的base box上用Puppet做provision之后得到的,那就是说如果我们自己有ubuntu 18.04,那么就不需要vagrant,直接用Puppet执行provision就可以.第二种方法就是这样的.
+1. 配置一台Ubuntu 18.04的机器,可以使用虚拟机
+2. 登录这台虚拟机,安装后git后,下载源代码
+$ apt-get install git
+$ git clone --recursive https://github.com/Berkeley-CS162/vagrant.git
+3. 添加vagrant用户(即使你不使用这个账号)
+  这步的目的其实是在vagrant用户的home directory里放上合适的脚本文件.
+  注意要用adduser命令,而不是useradd (学过liux的同学应该知道这两者的区别)
+$ adduser vagrant
+  系统会要求给vagrant用户设置一个口令,如果你的机器可能连外网,请注意密码安全性.
+4. 给vagrant用户无口令sudo权限.
+  你需要把vagrant用户添加到sudoer组里,即给予vagrant用户超级管理员的权限.注意修改/etc/sudoers,不能使用普通的vi或nano,需要visudo命令
+  修改后在/etc/sudoers文件中增加一行
+vagrant ALL=(ALL) NOPASSWD: ALL
+5. 安装puppet工具
+  sudo apt-get install puppet
+6. 执行provision操作
+  进入下载的vagrant目录,执行
+  $ sudo puppet apply manifests/site.pp --modulepath modules/
+7. 如果运行正常的话,现在,就可以用vagrant用户登录了.登录之后就可以看到系统提示符也改了,并且在home directory下有个code目录
+
+
+进入 ~/code/group/pintos/src 目录,在这里可以看到pintos的源码
+第一个作业,进入 threads, 执行
+make
+make check
+好惨,27个tests全部FAILED. 接受挑战吧,你的任务就是通过修改程序,使得程序能通过这27个tests.
+
+我用im.xjton.net这台阿里云主机,按第二种方法安装好了pintos环境,大家可以参考
+ssh vagrant@im.xjton.net
+密码为 Syhxsqq19  (疏影横斜水清浅的拼音的首字母,第一个S大写,其他小写,后面跟数字年份19)
+看到全部27个test都不过,是不是很绝望? 我在group0目录下放了一个即将完成的代码, 23 pass, 4 failed. 大家可以参考.
+希望大家尽快完成剩下的4个tests哦.

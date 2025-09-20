@@ -1,0 +1,28 @@
+Command line:
+   demo_mouse_rand_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55629
+
+Tue Jun 18 15:29:54 2024
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5155.84 Meg
+
+ Total Signals          : 20
+ Total Nets             : 32
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 24
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 414
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 4998.55 Meg
+
+Tue Jun 18 15:31:39 2024
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Lenovo\Desktop\exp3.2_arbitrary_sequence_generator\button_led_buzzer.ncd
+OUTFILE=C:\Users\Lenovo\Desktop\exp3.2_arbitrary_sequence_generator\button_led_buzzer.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\Lenovo\Desktop\exp3.2_arbitrary_sequence_generator
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

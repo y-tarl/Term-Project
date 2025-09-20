@@ -1,0 +1,20 @@
+//======clk=======//
+NET "clk" LOC = P56;
+NET "clk" IOSTANDARD = LVCMOS33;
+//======LED=======//
+NET "led[0]" LOC = P143;
+NET "led[1]" LOC = P144;
+NET "led[2]" LOC = P1;
+NET "led[3]" LOC = P5;
+NET "led[4]" LOC = P6;
+NET "led[5]" LOC = P7;
+NET "led[6]" LOC = P8;
+NET "led[7]" LOC = P2;
+NET "led[0]" IOSTANDARD = LVCMOS33;
+NET "led[1]" IOSTANDARD = LVCMOS33;
+NET "led[2]" IOSTANDARD = LVCMOS33;
+NET "led[3]" IOSTANDARD = LVCMOS33;
+NET "led[4]" IOSTANDARD = LVCMOS33;
+NET "led[5]" IOSTANDARD = LVCMOS33;
+NET "led[6]" IOSTANDARD = LVCMOS33;
+NET "led[7]" IOSTANDARD = LVCMOS33;

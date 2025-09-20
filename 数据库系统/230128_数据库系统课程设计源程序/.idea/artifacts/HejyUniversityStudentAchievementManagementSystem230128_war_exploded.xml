@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="HejyUniversityStudentAchievementManagementSystem230128:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/HejyUniversityStudentAchievementManagementSystem230128_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HejyUniversityStudentAchievementManagementSystem230128" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="library" level="project" name="servlet-api" />
+      <element id="javaee-facet-resources" facet="HejyUniversityStudentAchievementManagementSystem230128/web/Web" />
+    </root>
+  </artifact>
+</component>

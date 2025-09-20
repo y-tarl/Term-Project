@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/" reloadable="true">
+    <Resource
+            name="jdbc/HejyMIS230128"
+            type="javax.sql.DataSource"
+            maxTotal="50"
+            maxIdle="20"
+            username="zjutuser"
+            maxWaitMillis="5000"
+            driverClassName="org.postgresql.Driver"
+            password="openGauss@123"
+            url="jdbc:postgresql://192.168.254.31:26000/HejyMIS230128?characterEncoding=utf-8"/>
+</Context>

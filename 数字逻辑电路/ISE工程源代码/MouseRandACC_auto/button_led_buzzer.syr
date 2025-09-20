@@ -1,0 +1,546 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: button_led_buzzer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "button_led_buzzer.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "button_led_buzzer"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : button_led_buzzer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\MouseRandACC_auto\button_led_buzzer.v" into library work
+Parsing module <button_led_buzzer>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <button_led_buzzer>.
+WARNING:HDLCompiler:413 - "C:\Users\Lenovo\Desktop\MouseRandACC_auto\button_led_buzzer.v" Line 152: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <button_led_buzzer>.
+    Related source file is "C:\Users\Lenovo\Desktop\MouseRandACC_auto\button_led_buzzer.v".
+    Set property "KEEP = TRUE" for signal <cnt_900us>.
+    Set property "KEEP = TRUE" for signal <_n0190>.
+    Found 1-bit register for signal <cnt_full>.
+    Found 3-bit register for signal <state>.
+    Found 4-bit register for signal <col>.
+    Found 5-bit register for signal <key_out>.
+    Found 5-bit register for signal <key_out_buf>.
+    Found 20-bit register for signal <cnt_900us>.
+    Found 32-bit register for signal <time_rand>.
+    Found 32-bit register for signal <time_cnt>.
+    Found 24-bit register for signal <rand>.
+    Found 8-bit register for signal <led>.
+    Found 1-bit register for signal <buzzer>.
+    Found 32-bit register for signal <update_interval>.
+    Found 64-bit register for signal <buzzer_count>.
+    Found 17-bit register for signal <div_cnt>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit adder for signal <div_cnt[16]_GND_1_o_add_2_OUT> created at line 46.
+    Found 20-bit adder for signal <cnt_900us[19]_GND_1_o_add_61_OUT> created at line 142.
+    Found 32-bit adder for signal <time_rand[31]_GND_1_o_add_75_OUT> created at line 171.
+    Found 32-bit adder for signal <time_cnt[31]_GND_1_o_add_80_OUT> created at line 180.
+    Found 64-bit adder for signal <buzzer_count[63]_GND_1_o_add_143_OUT> created at line 273.
+    Found 8x8-bit Read Only RAM for signal <_n0231>
+    Found 5-bit 4-to-1 multiplexer for signal <state[2]_row[3]_select_52_OUT> created at line 83.
+    Found 5-bit comparator not equal for signal <n0034> created at line 139
+    Found 32-bit comparator greater for signal <n0047> created at line 174
+    Found 64-bit comparator greater for signal <n0071> created at line 214
+    Found 64-bit comparator lessequal for signal <n0073> created at line 214
+    Found 64-bit comparator greater for signal <n0076> created at line 219
+    Found 64-bit comparator lessequal for signal <n0080> created at line 224
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal cnt_900us may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 245 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <button_led_buzzer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 5
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 32-bit adder                                          : 2
+ 64-bit adder                                          : 1
+# Registers                                            : 13
+ 1-bit register                                        : 2
+ 17-bit register                                       : 1
+ 20-bit register                                       : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 3
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+ 64-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 6
+ 32-bit comparator greater                             : 1
+ 5-bit comparator not equal                            : 1
+ 64-bit comparator greater                             : 2
+ 64-bit comparator lessequal                           : 2
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 6
+ 20-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+ 5-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <rand_23> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_22> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_21> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_20> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_19> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_18> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_17> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_16> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_15> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_14> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_13> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_12> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_11> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_10> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_9> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_8> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_7> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_6> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_5> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_4> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rand_3> (without init value) has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <rand<23:3>> (without init value) have a constant value of 0 in block <button_led_buzzer>.
+
+Synthesizing (advanced) Unit <button_led_buzzer>.
+The following registers are absorbed into accumulator <time_rand>: 1 register on signal <time_rand>.
+The following registers are absorbed into counter <time_cnt>: 1 register on signal <time_cnt>.
+The following registers are absorbed into counter <buzzer_count>: 1 register on signal <buzzer_count>.
+The following registers are absorbed into counter <div_cnt>: 1 register on signal <div_cnt>.
+INFO:Xst:3231 - The small RAM <Mram__n0231> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rand>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <button_led_buzzer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 20-bit adder                                          : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 64-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+# Comparators                                          : 6
+ 32-bit comparator greater                             : 1
+ 5-bit comparator not equal                            : 1
+ 64-bit comparator greater                             : 2
+ 64-bit comparator lessequal                           : 2
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 6
+ 20-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+ 5-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 011   | 11
+ 010   | 10
+-------------------
+WARNING:Xst:1293 - FF/Latch <update_interval_31> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_30> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_29> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_28> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_23> has a constant value of 1 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_22> has a constant value of 1 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_21> has a constant value of 1 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_15> has a constant value of 1 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_14> has a constant value of 1 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_11> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_10> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_6> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_5> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_4> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_3> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_2> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_1> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <update_interval_0> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <update_interval_7> in Unit <button_led_buzzer> is equivalent to the following FF/Latch, which will be removed : <update_interval_12> 
+INFO:Xst:2261 - The FF/Latch <update_interval_16> in Unit <button_led_buzzer> is equivalent to the following FF/Latch, which will be removed : <update_interval_24> 
+INFO:Xst:2261 - The FF/Latch <update_interval_17> in Unit <button_led_buzzer> is equivalent to the following 2 FFs/Latches, which will be removed : <update_interval_19> <update_interval_25> 
+INFO:Xst:2261 - The FF/Latch <update_interval_18> in Unit <button_led_buzzer> is equivalent to the following FF/Latch, which will be removed : <update_interval_26> 
+
+Optimizing unit <button_led_buzzer> ...
+WARNING:Xst:1293 - FF/Latch <time_cnt_28> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <time_cnt_29> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <time_cnt_30> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <time_cnt_31> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <update_interval_7> in Unit <button_led_buzzer> is the opposite to the following FF/Latch, which will be removed : <update_interval_16> 
+INFO:Xst:3203 - The FF/Latch <update_interval_8> in Unit <button_led_buzzer> is the opposite to the following FF/Latch, which will be removed : <update_interval_17> 
+INFO:Xst:3203 - The FF/Latch <update_interval_9> in Unit <button_led_buzzer> is the opposite to the following FF/Latch, which will be removed : <update_interval_20> 
+INFO:Xst:3203 - The FF/Latch <update_interval_13> in Unit <button_led_buzzer> is the opposite to the following FF/Latch, which will be removed : <update_interval_27> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block button_led_buzzer, actual ratio is 7.
+FlipFlop key_out_buf_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 196
+ Flip-Flops                                            : 196
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : button_led_buzzer.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 794
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 156
+#      LUT2                        : 20
+#      LUT3                        : 66
+#      LUT4                        : 38
+#      LUT5                        : 71
+#      LUT6                        : 46
+#      MUXCY                       : 224
+#      VCC                         : 1
+#      XORCY                       : 161
+# FlipFlops/Latches                : 196
+#      FD                          : 65
+#      FDE                         : 29
+#      FDR                         : 97
+#      FDS                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 4
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             196  out of  11440     1%  
+ Number of Slice LUTs:                  407  out of   5720     7%  
+    Number used as Logic:               407  out of   5720     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    414
+   Number with an unused Flip Flop:     218  out of    414    52%  
+   Number with an unused LUT:             7  out of    414     1%  
+   Number of fully used LUT-FF pairs:   189  out of    414    45%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    102    17%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 196   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.672ns (Maximum Frequency: 149.880MHz)
+   Minimum input arrival time before clock: 4.183ns
+   Maximum output required time after clock: 4.444ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.672ns (frequency: 149.880MHz)
+  Total number of paths / destination ports: 17116 / 315
+-------------------------------------------------------------------------
+Delay:               6.672ns (Levels of Logic = 5)
+  Source:            key_out_buf_3 (FF)
+  Destination:       buzzer_count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: key_out_buf_3 to buzzer_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   1.234  key_out_buf_3 (key_out_buf_3)
+     LUT5:I0->O            2   0.254   0.726  led_reg[7]_key_out_buf[4]_AND_18_o1_SW0 (N13)
+     LUT6:I5->O            2   0.254   0.834  led_reg[7]_key_out_buf[4]_AND_18_o1 (led_reg[7]_key_out_buf[4]_AND_18_o1)
+     LUT6:I4->O            4   0.250   0.804  _n0261_inv_SW0 (N9)
+     LUT6:I5->O           17   0.254   1.209  _n0261_inv (_n0261_inv)
+     LUT3:I2->O            1   0.254   0.000  buzzer_count_0_rstpot (buzzer_count_0_rstpot)
+     FD:D                      0.074          buzzer_count_0
+    ----------------------------------------
+    Total                      6.672ns (1.865ns logic, 4.807ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 28 / 5
+-------------------------------------------------------------------------
+Offset:              4.183ns (Levels of Logic = 3)
+  Source:            row<0> (PAD)
+  Destination:       key_out_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: row<0> to key_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   1.117  row_0_IBUF (row_0_IBUF)
+     LUT4:I0->O            2   0.254   1.156  Mmux_state[2]_row[3]_select_52_OUT131 (Mmux_state[2]_row[3]_select_52_OUT13)
+     LUT5:I0->O            1   0.254   0.000  Mmux_state[2]_row[3]_select_52_OUT11 (state[2]_row[3]_select_52_OUT<0>)
+     FD:D                      0.074          key_out_0
+    ----------------------------------------
+    Total                      4.183ns (1.910ns logic, 2.273ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              4.444ns (Levels of Logic = 1)
+  Source:            led_reg_0 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: led_reg_0 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.525   1.007  led_reg_0 (led_reg_0)
+     OBUF:I->O                 2.912          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      4.444ns (3.437ns logic, 1.007ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.672|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.04 secs
+ 
+--> 
+
+Total memory usage is 4504704 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   45 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

@@ -1,0 +1,465 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: button_led_buzzer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "button_led_buzzer.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "button_led_buzzer"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : button_led_buzzer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\Mouse\button_led_buzzer.v" into library work
+Parsing module <button_led_buzzer>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <button_led_buzzer>.
+WARNING:HDLCompiler:413 - "C:\Users\Lenovo\Desktop\Mouse\button_led_buzzer.v" Line 152: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <button_led_buzzer>.
+    Related source file is "C:\Users\Lenovo\Desktop\Mouse\button_led_buzzer.v".
+    Set property "KEEP = TRUE" for signal <cnt_900us>.
+    Set property "KEEP = TRUE" for signal <_n0142>.
+    Found 1-bit register for signal <cnt_full>.
+    Found 3-bit register for signal <state>.
+    Found 4-bit register for signal <col>.
+    Found 5-bit register for signal <key_out>.
+    Found 5-bit register for signal <key_out_buf>.
+    Found 20-bit register for signal <cnt_900us>.
+    Found 32-bit register for signal <time_cnt>.
+    Found 8-bit register for signal <led>.
+    Found 1-bit register for signal <buzzer>.
+    Found 17-bit register for signal <div_cnt>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit adder for signal <div_cnt[16]_GND_1_o_add_2_OUT> created at line 46.
+    Found 20-bit adder for signal <cnt_900us[19]_GND_1_o_add_61_OUT> created at line 142.
+    Found 32-bit adder for signal <time_cnt[31]_GND_1_o_add_75_OUT> created at line 166.
+    Found 5-bit 4-to-1 multiplexer for signal <state[2]_row[3]_select_52_OUT> created at line 83.
+    Found 5-bit comparator not equal for signal <n0034> created at line 139
+    Found 32-bit comparator greater for signal <n0047> created at line 171
+    Found 32-bit comparator greater for signal <n0049> created at line 173
+    Found 32-bit comparator greater for signal <n0051> created at line 175
+    Found 32-bit comparator greater for signal <n0053> created at line 177
+    Found 32-bit comparator greater for signal <n0055> created at line 179
+    Found 32-bit comparator greater for signal <n0057> created at line 181
+    Found 32-bit comparator greater for signal <n0059> created at line 183
+    Found 32-bit comparator greater for signal <n0061> created at line 185
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal cnt_900us may hinder XST clustering optimizations.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  93 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <button_led_buzzer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 17-bit register                                       : 1
+ 20-bit register                                       : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 9
+ 32-bit comparator greater                             : 8
+ 5-bit comparator not equal                            : 1
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 6
+ 20-bit 2-to-1 multiplexer                             : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <button_led_buzzer>.
+The following registers are absorbed into counter <time_cnt>: 1 register on signal <time_cnt>.
+The following registers are absorbed into counter <div_cnt>: 1 register on signal <div_cnt>.
+Unit <button_led_buzzer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 20-bit adder                                          : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Comparators                                          : 9
+ 32-bit comparator greater                             : 8
+ 5-bit comparator not equal                            : 1
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 6
+ 20-bit 2-to-1 multiplexer                             : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 011   | 11
+ 010   | 10
+-------------------
+
+Optimizing unit <button_led_buzzer> ...
+WARNING:Xst:1293 - FF/Latch <time_cnt_30> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <time_cnt_31> has a constant value of 0 in block <button_led_buzzer>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block button_led_buzzer, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : button_led_buzzer.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 416
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 67
+#      LUT2                        : 13
+#      LUT3                        : 9
+#      LUT4                        : 19
+#      LUT5                        : 70
+#      LUT6                        : 44
+#      MUXCY                       : 122
+#      VCC                         : 1
+#      XORCY                       : 67
+# FlipFlops/Latches                : 93
+#      FD                          : 20
+#      FDE                         : 2
+#      FDR                         : 67
+#      FDS                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 4
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              93  out of  11440     0%  
+ Number of Slice LUTs:                  225  out of   5720     3%  
+    Number used as Logic:               225  out of   5720     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    234
+   Number with an unused Flip Flop:     141  out of    234    60%  
+   Number with an unused LUT:             9  out of    234     3%  
+   Number of fully used LUT-FF pairs:    84  out of    234    35%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    102    17%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 93    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.365ns (Maximum Frequency: 157.115MHz)
+   Minimum input arrival time before clock: 4.183ns
+   Maximum output required time after clock: 4.277ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.365ns (frequency: 157.115MHz)
+  Total number of paths / destination ports: 6464 / 162
+-------------------------------------------------------------------------
+Delay:               6.365ns (Levels of Logic = 7)
+  Source:            time_cnt_19 (FF)
+  Destination:       led_reg_6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: time_cnt_19 to led_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             18   0.525   1.665  time_cnt_19 (time_cnt_19)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_n0059_lut<3> (Mcompar_n0059_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_n0059_cy<3> (Mcompar_n0059_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0059_cy<4> (Mcompar_n0059_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0059_cy<5> (Mcompar_n0059_cy<5>)
+     MUXCY:CI->O           6   0.235   1.104  Mcompar_n0059_cy<6> (Mcompar_n0059_cy<6>)
+     LUT3:I0->O            4   0.235   0.804  _n0189_inv_SW0 (N5)
+     LUT6:I5->O            2   0.254   0.725  _n0189_inv (_n0189_inv)
+     FDE:CE                    0.302          led_reg_6
+    ----------------------------------------
+    Total                      6.365ns (2.067ns logic, 4.298ns route)
+                                       (32.5% logic, 67.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 28 / 5
+-------------------------------------------------------------------------
+Offset:              4.183ns (Levels of Logic = 3)
+  Source:            row<0> (PAD)
+  Destination:       key_out_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: row<0> to key_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   1.117  row_0_IBUF (row_0_IBUF)
+     LUT4:I0->O            2   0.254   1.156  Mmux_state[2]_row[3]_select_52_OUT221 (Mmux_state[2]_row[3]_select_52_OUT22)
+     LUT5:I0->O            1   0.254   0.000  Mmux_state[2]_row[3]_select_52_OUT11 (state[2]_row[3]_select_52_OUT<0>)
+     FD:D                      0.074          key_out_0
+    ----------------------------------------
+    Total                      4.183ns (1.910ns logic, 2.273ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              4.277ns (Levels of Logic = 1)
+  Source:            led_reg_5 (FF)
+  Destination:       led<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: led_reg_5 to led<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   0.840  led_reg_5 (led_reg_5)
+     OBUF:I->O                 2.912          led_5_OBUF (led<5>)
+    ----------------------------------------
+    Total                      4.277ns (3.437ns logic, 0.840ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.365|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.78 secs
+ 
+--> 
+
+Total memory usage is 4488512 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

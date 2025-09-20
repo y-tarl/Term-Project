@@ -1,0 +1,28 @@
+Command line:
+   button_led_buzzer_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54598
+
+Thu Jun 13 09:53:42 2024
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5155.79 Meg
+
+ Total Signals          : 17
+ Total Nets             : 32
+ Total Signal Drivers   : 9
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 237
+
+ Total Simulation Time: 0.015625 sec
+
+ Current Memory Usage: 5155.79 Meg
+
+Thu Jun 13 09:53:47 2024
+

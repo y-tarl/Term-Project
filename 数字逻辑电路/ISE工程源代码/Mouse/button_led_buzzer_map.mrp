@@ -1,0 +1,492 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'button_led_buzzer'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o button_led_buzzer_map.ncd button_led_buzzer.ngd
+button_led_buzzer.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sun May 28 16:32:20 2023
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    73 out of  11,440    1%
+    Number used as Flip Flops:                  73
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        147 out of   5,720    2%
+    Number used as logic:                      145 out of   5,720    2%
+      Number using O6 output only:              47
+      Number using O5 output only:              45
+      Number using O5 and O6:                   53
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   1,440    0%
+    Number used exclusively as route-thrus:      2
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         2
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    43 out of   1,430    3%
+  Number of MUXCYs used:                       116 out of   2,860    4%
+  Number of LUT Flip Flop pairs used:          149
+    Number with an unused Flip Flop:            79 out of     149   53%
+    Number with an unused LUT:                   2 out of     149    1%
+    Number of fully used LUT-FF pairs:          68 out of     149   45%
+    Number of unique control sets:               4
+    Number of slice register sites lost
+      to control set restrictions:              15 out of  11,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        18 out of     102   17%
+    Number of LOCed IOBs:                       18 out of      18  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.34
+
+Peak Memory Usage:  4513 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   4 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 104 block(s) removed
+   2 block(s) optimized away
+ 104 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "cnt_900us<19>" is unused and has been removed.
+ Unused block "cnt_900us_19" (SFF) removed.
+  The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<19>" is unused and has been
+removed.
+   Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT111" (ROM) removed.
+    The signal "N7" is unused and has been removed.
+     Unused block "key_out_buf[4]_key_out[4]_not_equal_59_o_SW0" (ROM) removed.
+    The signal "cnt_900us[19]_GND_1_o_add_61_OUT<19>" is unused and has been
+removed.
+     Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<19>" (XOR) removed.
+      The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<18>" is unused and has been
+removed.
+       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<18>" (MUX) removed.
+        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<17>" is unused and has been
+removed.
+         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<17>" (MUX) removed.
+          The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<16>" is unused and has been
+removed.
+           Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<16>" (MUX) removed.
+            The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<15>" is unused and has been
+removed.
+             Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<15>" (MUX) removed.
+              The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<14>" is unused and has been
+removed.
+               Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<14>" (MUX) removed.
+                The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<13>" is unused and has been
+removed.
+                 Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<13>" (MUX) removed.
+                  The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<12>" is unused and has been
+removed.
+                   Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<12>" (MUX) removed.
+                    The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<11>" is unused and has been
+removed.
+                     Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<11>" (MUX) removed.
+                      The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<10>" is unused and has been
+removed.
+                       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<10>" (MUX) removed.
+                        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<9>" is unused and has been
+removed.
+                         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<9>" (MUX) removed.
+                          The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<8>" is unused and has been
+removed.
+                           Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<8>" (MUX) removed.
+                            The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<7>" is unused and has been
+removed.
+                             Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<7>" (MUX) removed.
+                              The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<6>" is unused and has been
+removed.
+                               Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<6>" (MUX) removed.
+                                The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<5>" is unused and has been
+removed.
+                                 Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<5>" (MUX) removed.
+                                  The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<4>" is unused and has been
+removed.
+                                   Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<4>" (MUX) removed.
+                                    The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<3>" is unused and has been
+removed.
+                                     Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<3>" (MUX) removed.
+                                      The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<2>" is unused and has been
+removed.
+                                       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<2>" (MUX) removed.
+                                        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<1>" is unused and has been
+removed.
+                                         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<1>" (MUX) removed.
+                                          The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<0>" is unused and has been
+removed.
+                                           Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<0>" (MUX) removed.
+                                            The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_lut<0>" is unused and has been
+removed.
+                                             Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_lut<0>_INV_0" (BUF) removed.
+                                              The signal "cnt_900us<0>" is unused and has been removed.
+                                               Unused block "cnt_900us_0" (SFF) removed.
+                                                The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<0>" is unused and has been removed.
+                                                 Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT11" (ROM) removed.
+*The signal "cnt_900us[19]_GND_1_o_add_61_OUT<0>" is unused and has been removed.
+* Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<0>" (XOR) removed.
+                                                The signal "cnt_900us[19]_GND_1_o_equal_59_o" is unused and has been removed.
+                                                 Unused block "cnt_900us[19]_GND_1_o_equal_59_o<19>4" (ROM) removed.
+*The signal "cnt_900us<6>" is unused and has been removed.
+* Unused block "cnt_900us_6" (SFF) removed.
+*  The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<6>" is unused and has been removed.
+*   Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT171" (ROM) removed.
+*    The signal "cnt_900us[19]_GND_1_o_add_61_OUT<6>" is unused and has been removed.
+*     Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<6>" (XOR) removed.
+*      The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<6>_rt" is unused and has
+been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<6>_rt" (ROM) removed.
+*The signal "cnt_900us<5>" is unused and has been removed.
+* Unused block "cnt_900us_5" (SFF) removed.
+*  The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<5>" is unused and has been removed.
+*   Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT161" (ROM) removed.
+*    The signal "cnt_900us[19]_GND_1_o_add_61_OUT<5>" is unused and has been removed.
+*     Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<5>" (XOR) removed.
+*      The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<5>_rt" is unused and has
+been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<5>_rt" (ROM) removed.
+*The signal "cnt_900us[19]_GND_1_o_equal_59_o<19>1" is unused and has been
+removed.
+* Unused block "cnt_900us[19]_GND_1_o_equal_59_o<19>2" (ROM) removed.
+*  The signal "cnt_900us<11>" is unused and has been removed.
+*   Unused block "cnt_900us_11" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<11>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT31" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<11>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<11>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<11>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<11>_rt" (ROM) removed.
+*  The signal "cnt_900us<9>" is unused and has been removed.
+*   Unused block "cnt_900us_9" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<9>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT201" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<9>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<9>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<9>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<9>_rt" (ROM) removed.
+*  The signal "cnt_900us<15>" is unused and has been removed.
+*   Unused block "cnt_900us_15" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<15>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT71" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<15>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<15>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<15>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<15>_rt" (ROM) removed.
+*  The signal "cnt_900us<14>" is unused and has been removed.
+*   Unused block "cnt_900us_14" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<14>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT61" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<14>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<14>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<14>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<14>_rt" (ROM) removed.
+*  The signal "cnt_900us<13>" is unused and has been removed.
+*   Unused block "cnt_900us_13" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<13>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT51" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<13>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<13>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<13>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<13>_rt" (ROM) removed.
+*The signal "cnt_900us[19]_GND_1_o_equal_59_o<19>" is unused and has been
+removed.
+* Unused block "cnt_900us[19]_GND_1_o_equal_59_o<19>1" (ROM) removed.
+*  The signal "cnt_900us<1>" is unused and has been removed.
+*   Unused block "cnt_900us_1" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<1>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT121" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<1>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<1>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<1>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<1>_rt" (ROM) removed.
+*  The signal "cnt_900us<2>" is unused and has been removed.
+*   Unused block "cnt_900us_2" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<2>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT131" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<2>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<2>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<2>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<2>_rt" (ROM) removed.
+*  The signal "cnt_900us<3>" is unused and has been removed.
+*   Unused block "cnt_900us_3" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<3>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT141" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<3>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<3>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<3>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<3>_rt" (ROM) removed.
+*  The signal "cnt_900us<4>" is unused and has been removed.
+*   Unused block "cnt_900us_4" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<4>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT151" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<4>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<4>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<4>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<4>_rt" (ROM) removed.
+*  The signal "cnt_900us<7>" is unused and has been removed.
+*   Unused block "cnt_900us_7" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<7>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT181" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<7>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<7>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<7>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<7>_rt" (ROM) removed.
+*The signal "cnt_900us[19]_GND_1_o_equal_59_o<19>2" is unused and has been
+removed.
+* Unused block "cnt_900us[19]_GND_1_o_equal_59_o<19>3" (ROM) removed.
+*  The signal "cnt_900us<10>" is unused and has been removed.
+*   Unused block "cnt_900us_10" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<10>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT21" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<10>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<10>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<10>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<10>_rt" (ROM) removed.
+*  The signal "cnt_900us<8>" is unused and has been removed.
+*   Unused block "cnt_900us_8" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<8>" is unused and has been removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT191" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<8>" is unused and has been removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<8>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<8>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<8>_rt" (ROM) removed.
+*  The signal "cnt_900us<12>" is unused and has been removed.
+*   Unused block "cnt_900us_12" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<12>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT41" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<12>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<12>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<12>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<12>_rt" (ROM) removed.
+*  The signal "cnt_900us<16>" is unused and has been removed.
+*   Unused block "cnt_900us_16" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<16>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT81" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<16>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<16>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<16>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<16>_rt" (ROM) removed.
+*  The signal "cnt_900us<17>" is unused and has been removed.
+*   Unused block "cnt_900us_17" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<17>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT91" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<17>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<17>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<17>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<17>_rt" (ROM) removed.
+*  The signal "cnt_900us<18>" is unused and has been removed.
+*   Unused block "cnt_900us_18" (SFF) removed.
+*    The signal "cnt_900us[19]_GND_1_o_mux_63_OUT<18>" is unused and has been
+removed.
+*     Unused block "Mmux_cnt_900us[19]_GND_1_o_mux_63_OUT101" (ROM) removed.
+*      The signal "cnt_900us[19]_GND_1_o_add_61_OUT<18>" is unused and has been
+removed.
+*       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<18>" (XOR) removed.
+*        The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<18>_rt" is unused and has
+been removed.
+*         Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_cy<18>_rt" (ROM) removed.
+      The signal "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<19>_rt" is unused and has
+been removed.
+       Unused block "Madd_cnt_900us[19]_GND_1_o_add_61_OUT_xor<19>_rt" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| buzzer                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| col<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| col<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| col<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| col<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| row<0>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| row<1>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| row<2>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| row<3>                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
